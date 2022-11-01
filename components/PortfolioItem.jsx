@@ -17,7 +17,10 @@ const PortfolioItem = ({ imgURL, title, stack }) => {
         </h3>
         <p className="flex flex-wrap gap-2 items-center justify-start text-sm">
           {stack.map((item) => (
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-textDark dark:border-textLight rounded-md">
+            <span
+              key={item}
+              className="inline-block px-2 py-1 font-semibold border-2 border-textDark dark:border-textLight rounded-md"
+            >
               {item}
             </span>
           ))}
