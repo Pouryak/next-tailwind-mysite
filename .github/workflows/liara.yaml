@@ -1,7 +1,9 @@
-name: CD-Liara
+name: CD-Example
+
 on:
   push:
-    branches: [main]
+    branches: [master]
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,5 +17,5 @@ jobs:
         env:
           LIARA_TOKEN: ${{ secrets.LIARA_TOKEN }}
         run: |
-          npm i -g @liara/cli@3
-          liara deploy --app="next-tailwindcss" --api-token="$LIARA_TOKEN" --detach
+          npm i -g @liara/cli
+          liara deploy --api-token="$LIARA_TOKEN" --detach
