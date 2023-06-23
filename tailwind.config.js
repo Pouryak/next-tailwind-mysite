@@ -6,6 +6,7 @@ module.exports = {
   darkMode: "class",
   theme: {
     screens: {
+      xs: "387px",
       sm: "480px",
       md: "768px",
       lg: "976px",
@@ -18,6 +19,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         opensans: ["M PLUS Rounded 1c", "sans-serif"],
+        gandom: ["Gandom"],
       },
       colors: {
         glassLight: "#ffffff40",
@@ -30,6 +32,7 @@ module.exports = {
         textLight: "rgb(255, 255, 255, 0.92)",
         greenAccent: "#96f2d7",
         purpleAccent: "rgb(255, 99, 195)",
+        glass: "rgba(32, 32, 35, 0.02)",
         hoverLight: "rgba(154, 230, 180, 0.16)",
         hoverDark: "rgba(35, 107, 83, 0.240)",
       },

@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: Gandom;
+  src: url("../fonts/Gandom.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -28,9 +33,7 @@
       flex-direction: column;
     }
   }
-}
 
-@layer components {
   .animated-text {
     animation: move 4s linear infinite;
     background-image: linear-gradient(
